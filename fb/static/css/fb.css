@@ -1,0 +1,312 @@
+body{
+    background-image: linear-gradient(rgb(236, 241, 241), rgb(228, 227, 227), rgb(224, 222, 222));
+    height:max-content;
+}
+
+.facebook-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Login Section */
+
+.login_page{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:15%;
+}
+
+.fb_login_image{
+    width:60%;
+    margin-left: 5%;
+}
+
+.facebook_login_desc{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 12%;
+}
+
+.login_box{
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 1px 1px #c7c4c4;
+}
+
+
+
+.login_input_box{
+    height:15%;
+    width:80%;
+    border-radius: 8px;
+}
+
+.login_btn{
+    width:65%;
+    height:13%;
+    font-weight: bold;
+}
+
+.create_account{
+    width: 50%;
+    background-color: rgb(57, 160, 48);
+    height: 13%;
+    color: white;
+    font-weight: bold;
+    padding:1px;
+}
+
+.login-page-footer{
+    background-color: white;
+    margin-top: 10%;
+}
+
+.login_page_langages{
+    margin-top:5%;
+    text-align: center;
+    padding:1%;
+}
+
+
+/* Registration Page */
+.registration_box{
+    box-shadow: 1px  grey;
+    width:100%;
+    height: 100%;
+    background-color: whitesmoke
+}
+
+.register_checkbox{
+    width:24%;
+}
+.register_date_box{
+    height:7%;
+    width: 24%;
+    margin-top:3%;
+    border-radius: 8px;
+}
+
+.register_checkbox{
+    width:20%;
+    height:6%;
+    margin-top:3%;
+    border-radius: 8px;
+}
+
+.register_para{
+    margin-top: 3%;
+    text-align: center;
+    width:80%;
+    margin-left:10%;
+    font-size: small;
+    color: aqua;
+}
+
+.check_box{
+    margin-left:1%;
+}
+
+.register_signin{
+    background-color:  rgb(57, 160, 48);
+    width:50%;
+    margin-left:20%;
+}
+
+/* Base page */
+
+.navbar-brand{
+    margin-right:10%;
+}
+
+/* Home Page */
+
+.facebook-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.home_page{
+    margin-top:10%;
+    /* overflow: hidden; */
+    position: sticky;
+    right: 50px;
+    /* width: 100%; */
+}
+
+.sticky{
+    position:fixed;
+    top:0;
+}
+
+.home-user-dashboard_2nd_part{
+    width:200%;
+    margin-top:30%;
+    background-color: white;
+    padding: 5%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border-radius: 8px;
+    margin-bottom: 5%;
+}
+
+.home-user-dashboard-head-icon{
+    margin-left:30%;
+}
+
+.home_user_dashboard_img_section{
+    background-color: rgb(248, 242, 242);
+    border-radius: 8px;
+    box-shadow: 2px 2px rgb(219, 217, 217);
+    text-align: center;
+}
+
+.home-user-dashboard_create_story{
+    margin-top:2%;
+}
+
+
+.home_user_dashboard_img{
+    width:100px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.home-user-dashboars-book-icon{
+    margin-top:5%;
+    margin-left:8%;
+    width:400px;
+}
+
+.home-user-dashboars-book-icon_para{
+    margin-left:5%;
+    width:40%;
+}
+
+/* Submit post section */
+
+.user_post_submit_section{
+    margin-top:140px;
+}
+
+
+/* Upload post section */
+
+.home-user-dashboard_upload_section_2nd_part{
+    width: 200%;
+    background-color: white;
+    padding:5%;
+    border-radius: 8px;
+}
+
+.home-user-dashboard_write_something_section{
+    margin-top: 10%;
+}
+
+.home-user-dashboard_input_section_image{
+    width:10%;
+}
+
+.home_user_upload_post_part{
+    text-decoration: none;
+    padding-top:5%;
+    text-decoration: none;
+    margin:13px;
+    text-align: center;
+}
+
+.home_user_upload_post{
+    width: 200%;
+    margin-top:10%;
+    text-decoration: none;
+    padding:5%;
+    background-color: white;
+}
+
+.uplod_post_username{
+    margin-left:8%;
+    margin-top:6%;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home_page_post_date{
+    margin-top:4%;
+}
+
+.home_page_post_description{
+    font-weight: bold;
+    margin-top:5%;
+}
+
+.home_page_post_file{
+    width:100%;
+}
+
+.home_page_like_comment_share{
+    padding:3%;
+}
+
+.home_page_post_share_comment{
+    color: grey;
+    text-align: end;
+    margin-left:190px;
+}
+
+.home_like_comment_share_button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.home_page_like_button{
+    text-decoration: none;
+    color: rgb(92, 91, 91);
+}
+
+.h{
+    color: red;
+}
+
+
+/*  Profile section  */
+
+.profile_background_image{
+    width:100%;
+    height: 50%;
+}
+
+.profile_page_username{
+    font-weight: bold;
+    font-size: 30px;
+    color: blue;
+    margin-left: 300px;
+}
+
+.profile_about_bio_section{
+    padding:5%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.add_story_button{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile_details_section{
+    padding:5%;
+    text-align: center;
+    background-color: blanchedalmond;
+    height:auto;
+}
+
+
+
+/* User upload profile picture */
+
+
+
+/* Upload shopping page products */
+
+.facebook_shopping_page{
+
+}

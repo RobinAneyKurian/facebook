@@ -1,0 +1,33 @@
+{% load static %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static 'css/fb.css' %}">
+<body>
+    <div class="row mt-5">
+        <div class="col-4"></div>
+        <div class="col-5">
+            <div  class="registration_box p-4">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <h1 style="font-weight:bold;">Sign Up</h1>
+                    <h6>Its quick and easy</h6>
+                    {{form.as_p}}
+                    <!-- <div>
+                        <input type="checkbox" for="male" class="check_box"> <input type="text" id="male" value="Male" class="register_checkbox">
+                        <input type="checkbox" for="female" class="check_box"> <input type="text" id="female" value="Female" class="register_checkbox">
+                        <input type="checkbox" for="custom" class="check_box"> <input type="text" value="Custom" class="register_checkbox">
+                    </div> -->
+                    <div>
+                        <p class="register_para">People who use our service may have uploaded your contact information to Facebook. Learn more.</p>
+                    </div>
+                    <div>
+                        <p class="register_para">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+                    </div>
+                    <div>
+                        <button class="register_signin btn btn-success">Signin</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</body>

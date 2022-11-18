@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+
+
+
+  <div style="margin-top:10%; text-align:center">
+    <a href="{% url 'addproducts' %}">Add Items</a>
+  </div>
+
+  {{request.user}}
+<div class="container">
+<div class="facebook_shopping_page col-12 col-md-6 col-lg 4" style="margin-top:10%;">
+  {% for pro in products %}
+  <div class="card" style="width: 18rem;">
+    {% if pro.product_image %}
+    <img src="{{'pro.product_image.url'}}" class="card-img-top" alt="...">
+    {% endif %}
+    <div class="card-body">
+      <h5 class="card-title">{{pro.description}}</h5>
+      <p class="card-text">Price: {{pro.price}}</p>
+      <p>Qty: {{pro.stock}}</p>
+      <a href="#" class="btn btn-primary">Add Catt</a>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,96 @@
+{% load static %}
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="{% static 'css/fb.css' %}">
+<body>
+
+<div class="row" class="login_body">
+
+    <!-------Facebook Login page------->
+ 
+    <div class="col-1"></div>
+    <div class="col-10">
+        <div class="login_page">
+
+            <div class="facebook_login_page_detail  col-12 col-sm-12 col-md-12 col-lg-6">
+                <h1><img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" class="fb_login_image"></h1>
+                <h2 class="facebook_login_desc">Facebook helps you connect and share with the people in your life.</h2>
+            </div>
+       
+           
+    
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mb-3">
+                <form action="" method="post" class="login_box p-5">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <!-- <div>
+                        <input type="text" name="email_num" id="" placeholder="Email address or phone number" class="login_input_box">
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" name="password" placeholder="Password" class="login_input_box mt">
+                    </div> -->
+                    <div class="mt-2" class="text_align">
+                        <a href="#">Forgotten password?</a>
+                    </div>
+                    <div class="mt-2">
+                        <button class="login_btn btn btn-primary"  type="post"><h5>Login</h5></button>
+                    </div>
+                    <hr>
+                    <div class="mt-2">
+                        <button class="create_account btn btn-success" type=""><h5>Create Account</h5></button>
+                    </div>
+                </form>
+                <div>
+                    <p style="text-align:center"><span style="font-weight:bold; text-align:center;">Create a Page</span> for a celebrity, brand or business</p>
+                </div>
+                {% if messages %}
+
+                {% for msg in messages %}
+
+                {% if msg.level == DEFAULT_MESSAGE_LEVELS.ERROR %}
+
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                    <strong>{{msg}}</strong>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                {% endif %}
+
+                {% endfor %}
+
+                {% endif %}
+                </div>
+            </div>
+          
+        </div>
+
+    </div>
+    <div class="col-1"></div>
+
+<footer class="login-page-footer">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <div class="login_page_langages">
+                <h6> English (UK) മലയാളം தமிழ் ಕನ್ನಡ हिन्दी اردو বাংলা తెలుగు Español Português (Brasil) Français (France)</h6>
+            </div>
+            <hr>
+            <div>
+                <p>Sign Up Log in Messenger Facebook Lite Watch Places Games Marketplace Meta Pay Oculus Portal Instagram Bulletin Local Fundraisers Services Voting Information CentreGroupsAboutCreate adCreate Page Developers Careers Privacy Cookies AdChoices Terms Help Contact uploading and non-users Settings</p>
+            </div>
+            <div>
+                <p>Meta © 2022</p>
+            </div>
+    
+        </div>
+        <div class="col-1"></div>
+    </div>
+</footer>
+
+
+</div>
+</body>
+

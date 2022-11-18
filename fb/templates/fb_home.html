@@ -1,0 +1,217 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+{% load static %}
+
+<div class="facebook-home">
+<!------Home page setting section-------->
+
+            <!---Home page settings first part----->
+
+            <div class="col-6 row">
+                <div class="row home_page  d-none d-md-none d-lg-block" style="padding-top:40px">
+                    <div class="facebook_home_settings  m-3">
+                        <div class="position-fixed">
+                            <h6><a href=""><img src="" alt=""></a>Username</h6>
+                        </div>
+                
+                        <div class="position-fixed mt-5">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-user-group" style="font-size: 20px;"></i></a> Find Friends</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:6%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-people-group" style="font-size: 20px;"></i></a> Groups</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:9%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-house" style="font-size: 20px; color:rgb(241, 156, 28)"></i></a> Marketplace</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:12%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-tv" style="font-size: 20px;"></i></a> Watch</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:15%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-clock" style="font-size: 20px;"></i></a> Memmories</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:18%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-bookmark" style="font-size: 20px; color:rgb(209, 34, 180)"></i></a> Saved</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:21%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-flag" style="font-size: 20px; color:rgb(10, 214, 241)"></i></a> Pages</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:25%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-radio" style="font-size: 20px;"></i></a> Most Recent</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:28%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-star" style="font-size: 20px; color:rgb(248, 203, 90)"></i></a> Favorites</h6>
+                        </div>
+                
+                
+                        <div class="position-fixed" style= "padding-top:31%;">
+                            <h6 ><a href="" class="m-2"><i class="fa-solid fa-calendar-days" style="font-size: 20px; color:red"></i></a> Events</h6>
+                        </div>
+
+                        <div class="position-fixed" style= "padding-top:34%;">
+                            <h6 ><a href="{% url 'signout' %}" class="m-2"><i class="fa-solid fa-arrow-right-from-bracket" style="font-size: 20px;  color:rgb(92, 13, 59)"></i></a> Logout</h6>
+                        </div>
+                
+                        <div class="position-fixed" style= "padding-top:37%;">
+                            <p style="font-size:70%; width:80%;">
+                                Privacy  · Terms  · Advertising  · Ad Choices   · Cookies  · More · Meta © 2022
+                            </p>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+
+            <!----Home page upload feeds second part---->
+
+<div class="col-5">
+
+
+    <div class="home-user-dashboard_2nd_part" style="margin-top:30%;">
+
+        <div class="d-flex flex-row">
+            <h4 class="d-flex flex-row" style="margin:5%;"><span style="margin:5%;"><i class="fa-solid fa-book-open" style="font-size:80%; margin-top:5%;"></i></span> Stories</h4>
+            <h4 class="d-flex flex-row" style="margin:5%;"><span style="margin:5%;"><i class="fa-solid fa-tv" style="font-size:80%; margin-top:5%;"></i></span> Reels</h4>
+            <h4 class="d-flex flex-row" style="margin:5%;"><span style="margin:5%;"><i class="fa-solid fa-video" style="font-size:80%; margin-top:5%;"></i> </span>Rooms</h4>   
+        </div>
+
+        <div class="d-flex flex-row m-4">
+            
+                <div class="d-flex flex-column home_user_dashboard_img_section">
+                    <img src="{% static 'image/best_performer_lewa.webp' %}" alt="" class="home_user_dashboard_img">
+                    <form action="">
+                        {% csrf_token %}
+                        <p class="home-user-dashboard_create_story">Create Story</p>
+                        <a href=""><i class="fa-solid fa-plus" style="background-color:rgb(8, 8, 235); border-radius:8px; font-size:30px; color:white"></i></a>
+                    </form>
+                </div>
+
+               <div>
+                <p class="home-user-dashboars-book-icon"><span><i class="fa-solid fa-book-open"></i></span class="home-user-dashboars-book-icon_para"> Share everyday moments with all.</p>
+                <p class="home-user-dashboars-book-icon"><span><i class="fa-solid fa-clock"></i></span class="home-user-dashboars-book-icon_para"> Stories disappear after 24 hours.</p>
+                <p class="home-user-dashboars-book-icon"><span><i class="fa-brands fa-facebook-messenger"></i></span class="home-user-dashboars-book-icon_para"> Replies and reactions are private.</p>
+               </div>
+        </div>
+
+    </div>
+
+    <div class="home-user-dashboard_upload_section_2nd_part">
+
+        <div class="d-flex flex-row home-user-dashboard_write_something_section">
+            <img src="{% static 'image/facebook.png' %}" alt="" class="home-user-dashboard_input_section_image" style="border-radius:20%;">
+            <input type="text" name="" id="" placeholder="What's on your mind Robin?" style="height:8vh; width:100%; border-radius:12px; margin-left:5%; border: solid 1px white; background-color:rgb(231, 228, 228)">
+        </div>
+
+        <div class="d-flex flex-row">
+            <a href="" class="home_user_upload_post_part"><i class="fa-solid fa-video" style="color:rgb(196, 48, 48);"></i> Live Videos</a>
+            <a href="{% url 'uploadpost' %}" class="home_user_upload_post_part"><i class="fa-solid fa-cloud-arrow-up" style="color:green;"></i> Photo/Video</a>
+            <a href="" class="home_user_upload_post_part"><i class="fa-solid fa-face-smile" style="color:rgb(196, 196, 93);"></i> Feeling/Activity</a>
+        </div>
+    </div>
+
+
+  
+    <!-----Upload Post------->
+
+
+
+{% for post in files %}
+<div class="home_user_upload_post mt-5">
+    <div class="d-flex flex-row"  style="margin: 5%;">
+        <img src="{% static 'image/facebook.png' %}" alt="" style="width:15%;">
+        <p class="uplod_post_username"><h5 style="font-weight:bold;">{{request.user}} </h5> 
+
+            <div class="dropdown" style="margin-left: 200px; margin-top:10px;">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="{% url 'delete' post.id %}">Delete</a></li>
+                  <li><a class="dropdown-item" href="#">Copy link</a></li>
+                </ul>
+              </div>
+
+        </p>
+    </div>
+    <h6 class="home_page_post_date">{{post.posted_date}} <span style="margin-left:3%;"> <i class="fa-solid fa-earth-americas"></i></span></h6>
+    <h5 class="home_page_post_description">{{post.description}}</h5>
+    <div>
+        <p style="color:grey; margin-top:8%;">See Translation</p>
+    </div>
+    <div>
+        {% if post.images %}
+        <img src="{{post.images.url}}" alt="" class="home_page_post_file">
+        {% endif %}
+    </div>
+    <div>
+        <a href="" class="home_page_like_comment_share"  style="text-decoration:none;"><i class="fa-solid fa-thumbs-up" style="color:rgb(95, 85, 233);"></i> {{post.like.all.count}} <span  class="home_page_post_share_comment"> # Comments # Sahres</span></a>
+    </div>
+    <hr>
+    <div class="d-flex flex-row home_like_comment_share_button">
+        <div>
+            <a href="{% url 'like' post.id %}" class="home_page_like_button"> <i class="fa-solid fa-thumbs-up fa-1x" style="color:rgb(73, 73, 73); font-size:20px;"></i> Like</a>
+        </div>
+        <div>
+            <p>
+                <a class="home_page_like_button" role="button" data-bs-toggle="collapse" data-bs-target="#collapseExample{{ forloop.counter }}" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa-solid fa-message" style="color:rgb(73, 73, 73); font-size:20px;"></i> Comment
+                </a>
+              </p>
+        </div>
+        <div>
+            <a href="#" class="home_page_like_button"><i class="fa-solid fa-share" style="color:rgb(73, 73, 73); font-size:20px;"></i> Share</a>
+        </div>
+    </div>
+</div>
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="collapse" id="collapseExample{{ forloop.counter }}">
+        <div class="card card-body" style="text-align:center; width:456px;">
+          <textarea name="" id="" cols="30" rows="3" required style="white-space:normal">
+            Comment
+          </textarea>
+          <button type="submit" class="btn btn-primary mt-2">Add Comment</button>
+        </div>
+      </div style="margin-bottom:5%;">
+</form>
+{% endfor %}
+                 <!-- Add comment collapse button -->
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div class="col-4"></div>
+
+
+
+
+</div>
+
+{% endblock content %}
+
